@@ -1,0 +1,363 @@
+:host/deep/ .ui-dropdown {
+    width: 100% !important;
+    min-width: 130px;
+    min-height: 24px;
+    height: 28px;
+    max-height: 32px;
+    background-color: #fafafa;
+    border: 1px solid #a6a6a6 !important;
+    border-radius: 3px;
+    /* box-sizing: border-box;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s; */
+  }
+  :host/deep/ .ui-dropdown:hover {
+    border: 1px solid #34cfe6 !important;
+  }
+  
+  :host/deep/ .new-name .ui-dropdown {
+    width: 23% !important;
+    min-width: 130px;
+    height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #bdbdbd !important;
+    border-radius: 3px;
+  }
+  
+  :host/deep/ .top .ui-dropdown {
+    height: 25px;
+    width: 105px !important;
+    min-width: 60px !important;
+    border: none !important;
+    /* box-sizing: border-box;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s; */
+  }
+  
+  :host/deep/ .items-name .ui-dropdown {
+    width: 100% !important;
+    min-width: 130px;
+    height: 28px;
+    background-color: #fafafa;
+    ;
+    border: 1px solid #ccc !important;
+    border-radius: 5px;
+  }
+  
+  :host/deep/ .dropdown-name .ui-dropdown {
+    width: 16% !important;
+  }
+  
+  :host/deep/ .drop-name .ui-dropdown {
+    width: 40% !important;
+    min-width: 130px;
+    height: 28px;
+    background-color: #fafafa;
+    ;
+    border: 1px solid #ccc !important;
+    border-radius: 3px;
+  }
+  
+  :host/deep/ .drop-flag .ui-dropdown {
+    width: 70% !important;
+  }
+  
+  :host/deep/ .custom-drop.ui-dropdown {
+    width: 30% !important;
+  }
+  
+  :host/deep/ .productive-drop.ui-dropdown {
+    width: 90% !important;
+    margin-left: 5.5%
+  }
+  
+  :host/deep/ .productive-area.ui-dropdown {
+    width: 91% !important;
+  }
+  
+  
+  /*
+  营销活动查看中的下拉 
+  */
+  
+  :host/deep/ .dropName .ui-dropdown {
+    min-width: 375px;
+    height: 28px;
+    background-color: #fafafa;
+    border: 1px solid #ccc !important;
+    border-radius: 5px;
+  }
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-trigger {
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: -1px;
+    padding: 0;
+    top: 0;
+    margin-right: 0;
+  }
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-trigger .fa {
+    color: #757575;
+    background: url("../layout/images/arrow_bottom.png") no-repeat 4px 4px/58% auto;
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-label.ui-inputtext {
+    /* font: 1em "Roboto", "Helvetica Neue", sans-serif; */
+    /* height:28px;
+  width:230px; */
+    /*background-color: #fafafa;
+  border:1px solid #ccc !important; */
+    /* box-shadow: 0px 0px 5px #888 inset; */
+    color: #888;
+  }
+  
+  :host/deep/ .dropdowns .ui-dropdown .ui-dropdown-label.ui-inputtext {
+    width: 100% !important;
+  }
+  
+  
+  /* :host/deep/  .ui-dropdown.ui-state-focus {
+  border-bottom: 2px solid #0094D2;
+  } */
+  
+  :host/deep/ .ui-dropdown.ui-state-focus .ui-dropdown-label {
+    padding-bottom: 0;
+  }
+  
+  :host/deep/ .ui-dropdown-panel {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-list {
+    padding: 0;
+    /* width:150px; */
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-item-group {
+    font-weight: bold;
+    cursor: default;
+    background-color: #fff;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-item {
+    margin: 0;
+    font-size: 14px;
+    padding: 0.25em 0.3125em;
+    color: #646464;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fafafa;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-item:hover {
+    background-color: #34cfe6;
+    color: #fff;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-item.ui-state-highlight {
+    /* background-color: #FFC107; */
+    color: #a6a6a6;
+  }
+  
+  :host/deep/ .ui-dropdown-panel.ui-shadow {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-filter-container {
+    display: block;
+    border-bottom: 0px solid #bdbdbd;
+    background-color: #d5d5d5;
+    padding: 0.625em 1em;
+    width: 96% !important;
+    padding: 5px!important;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-filter-container input {
+    color: #070000;
+    padding: 0px;
+    border: 0;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-filter-container input:focus {
+    border-bottom-color: #ffffff;
+  }
+  
+  :host/deep/ .ui-dropdown-panel .ui-dropdown-filter-container .fa {
+    top: .3em;
+    right: .3em;
+    color: #ffffff;
+  }
+  
+  /* :host/deep/  .ui-inputtext.ng-dirty.ng-invalid, */
+  
+  //:host/deep/  p-dropdown.ng-dirty.ng-invalid>.ui-dropdown,
+  
+  .target-custom .ui-dropdown .ui-dropdown-label.ui-inputtext {
+    width: auto !important;
+    height: 30px;
+  }
+  
+  .target-custom .ui-dropdown {
+    width: 100% !important;
+    min-width: 0;
+  }
+  
+  .target-custom .grkh .ui-dropdown {
+    min-width: 94%;
+  }
+  
+  :host/deep/ .drop-name1 .ui-dropdown {
+    width: 49% !important;
+    min-width: 130px;
+    height: 28px;
+    background-color: #fafafa;
+    border: 1px solid #ccc !important;
+    border-radius: 3px;
+  }
+  
+  :host/deep/ .temDropdown .ui-dropdown {
+    min-width: 80px !important;
+  }
+  
+  .customGroupViewDropdown .ui-dropdown {
+    min-width: 100%!important;
+    font-size: 12px!important;
+    line-height: 18px!important;
+  }
+  
+  .marketing-manage .ui-dropdown-panel .ui-dropdown-list {
+    width: 100%;
+  }
+  
+  :host/deep/ .backGray .ui-dropdown {
+    /* 下拉框置灰 */
+    background-color: #eee!important;
+  }
+  :host/deep/ .me .temDropdown .ui-dropdown {
+    min-width: 128px !important;
+  }
+  
+  :host/deep/ .self .ui-dropdown {
+    width: 26% !important;
+  }
+  
+  :host/deep/ .marketing-type .ui-dropdown {
+    min-width: 120px !important;
+  }
+  
+  :host/deep/ .temDropdown .ui-dropdown {
+    min-width: 230px !important;
+  }
+  
+  :host/deep/ .licenseRegAddressStreet .ui-dropdown {
+    min-width: 50px !important;
+    width: 20.4% !important;
+    height: 28px !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+  }
+  
+  :host/deep/ .openDrop .ui-dropdown {
+    min-width: 50px !important;
+    width: 57% !important;
+    height: 28px !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+  }
+  
+  :host/deep/ .mineCustomDrop .ui-dropdown {
+    min-width: 69px !important;
+    width: 69% !important;
+    height: 28px !important;
+    line-height: 20px !important;
+    font-size: 15px !important;
+  }
+  
+  :host/deep/ .dropdowClick .ui-dropdown {
+    width: 30% !important;
+    min-width: 74%;
+    height: 28px;
+    background-color: #fafafa;
+    ;
+    border: 1px solid #ccc !important;
+    border-radius: 5px;
+  }
+  
+  :host/deep/ .customQueryInput .ui-dropdown {
+    min-width: 130px !important;
+    width: 200px !important;
+  }
+  
+  /* 下拉框字体大小 */
+  
+  .ui-dropdown label.ui-dropdown-label {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  
+  /* 列表中下拉 */
+  
+  :host/deep/ .ui-paginator .ui-dropdown {
+    width: 40px !important;
+    margin-left: 0;
+  }
+  
+  :host/deep/ .ui-paginator .ui-dropdown .ui-dropdown-label {
+    padding: 4px 13px 2px 0px;
+  }
+  
+  :host/deep/ .ui-paginator .ui-dropdown .ui-dropdown-clear-icon {
+    display: none;
+  }
+  
+  :host/deep/ .ui-paginator .ui-dropdown .ui-dropdown-trigger.ui-corner-right span {
+    background: url(../layout/images/arrow_bottom.png) no-repeat 8px 4px/50% auto;
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-clear-icon {
+    display: none !important;
+  }
+  /* 下拉框x */
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-clear-icon {
+    display: none !important;
+  }
+  
+
+
+
+  /* uat-更新后修改样式-end */
+  
+  :host/deep/ .ui-dropdown-panel.ui-widget-content.ui-corner-all.ui-shadow.ng-trigger.ng-trigger-panelState {
+    z-index: 9999 !important;
+  }
+  
+  :host/deep/ .ui-dropdown .ui-dropdown-label {
+    color:#000 !important;
+  }
+  
+  

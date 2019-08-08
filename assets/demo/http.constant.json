@@ -1,0 +1,15 @@
+{
+  "CONTEXT_PATH": "/workflow",
+  "ACTIVITI_CONTEXT_PATH": "/workflow-app/editor/#",
+  "ACTIVITI_DESIGN_CONTEXT_PATH": "/editor/",
+  "ACTIVITI_SCHEDULE_CONTEXT_PATH": "/showProcesses",
+  "RULE_ENGINE_CONTEXT_PATH": "/urule-server/urule/frame",
+  "RULE_ENGINE_CONTEXT_PATH_PROJECT": "/urule-server",
+  "RULE_ENGINE_CONTEXT_PATH_DECISION_SET": "/urule-server/rulesetInterface",
+  "RULE_ENGINE_CONTEXT_PATH_RULE_EDITOR": "/urule-server/urule",
+  "RESOURCE_PACKAGE": "/packageeditor",
+  "PARAM_PACKAGE": "/parametereditor",
+  "VARIABLE_PACKAGE": "/variableeditor",
+  "CONSTANT_PACKAGE": "/constanteditor",
+  "RULE_PACKAGE": "/ruleseteditor"
+}

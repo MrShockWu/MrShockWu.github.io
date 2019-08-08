@@ -1,0 +1,200 @@
+body {
+
+    .ui-inputtext-new {
+        font-family: $fontFamily;
+        height: 30px;
+        border-color: $borderColor;
+        padding: 5px 10px;
+
+        &:read-only {
+            background-color: $readOnlyBgColor;
+        }
+    }
+
+    .ui-inputtextarea-new {
+        font-family: $fontFamily;
+        border-color: $borderColor;
+        padding: 5px 10px;
+
+        &:read-only {
+            background-color: $readOnlyBgColor;
+        }
+    }
+
+    .ui-dropdown-new {
+        font-family: $fontFamily;
+        height: 30px;
+        background-color: #fff;
+        border-color: $borderColor!important;
+
+        .ui-dropdown-label.ui-inputtext {
+            padding: 5px 10px;
+        }
+    }
+
+    .ui-calendar-new {
+        font-family: $fontFamily;
+        min-width: 110px;
+        .ui-inputtext {
+            height: 30px;
+            border-color: $borderColor;
+            padding: 5px 10px;
+
+            &:read-only {
+                background-color: $readOnlyBgColor;
+            }
+        }
+
+        &.no-border {
+            .ui-inputtext {border: none;}
+        }
+
+        .ui-datepicker-trigger {
+            bottom: 2px;
+        }
+    }
+
+    .ui-fluid .ui-inputgroup .ui-button.ui-inputgroup-button-new {
+        font-family: $fontFamily;
+        width: 42px;
+    }
+
+    .ui-button {
+        font-family: $fontFamily;
+        &.ui-inputgroup-button-new {
+            border-radius: 0;
+            height: 30px;
+            background: #fff;
+            border: 1px solid $borderColor;
+            color: #37cef3;
+            padding: 0;
+
+            .icon.iconfont {
+                color: #37CEF3;
+            }
+
+            &:enabled:not(:focus):hover{
+                background-color: #37cef3;
+                color: #fff;
+                .icon.iconfont {
+                    color: #fff;
+                }
+            }
+        }
+
+
+        &.ui-button-btn2 {
+            background: #fff;
+            color: #000;
+            border: 1px solid $borderColor;
+            padding: 0;
+        }
+    }
+
+
+
+
+    .ui-btn1-div {
+        position: relative;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 28px;
+
+        .ui-button {
+            padding: 0;
+            border: none;
+            background: #34CEE6;
+            color: #fff;
+            height: 100%;
+        }
+
+        .place-div {
+            width: 26.5px;
+            height: 26.5px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            display: inline-block;
+            margin: 0;
+            height: 100%;
+            -moz-transition:    .3s;
+            -o-transition:      .3s;
+            -webkit-transition: .3s;
+            transition:         .3s;
+        }
+
+        .first {
+            left: 6px;
+            background-color: #34CEE6;
+        }
+        
+        .last {
+            right: 6px;
+            background-color: #34CEE6;
+        }
+
+        &:hover {
+            .ui-button, .first, .last {
+                background-color: #008aa6;                
+            }
+        }
+    }
+
+    .ui-btn2-div {
+        position: relative;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 28px;
+
+        .ui-button {
+            padding: 0;
+            border: none;
+            background: #fff;
+            color: #000;
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            height: 100%;
+        }
+
+        .place-div {
+            width: 26.5px;
+            height: 26.5px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            display: inline-block;
+            margin: 0;
+            height: 100%;
+            -moz-transition:    .3s;
+            -o-transition:      .3s;
+            -webkit-transition: .3s;
+            transition:         .3s;
+        }
+
+        .first {
+            left: 6px;
+            background-color: #fff;
+            border-left: 1px solid $borderColor;
+        }
+
+        .last {
+            right: 6px;
+            background-color: #fff;
+            border-right: 1px solid $borderColor;
+        }
+
+        &:hover {
+            .ui-button, .first, .last {
+                background-color: #008aa6;   
+                color: #fff;             
+            }
+        }
+    }
+
+    .ui-progressbar-new {
+        background-color: #eaeaea;
+        .ui-widget-header {
+            background-color: #34CEE6;
+        }
+    }
+}

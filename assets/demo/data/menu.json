@@ -1,0 +1,813 @@
+{
+	"data": [{
+			"label": "工作台",
+			"permission": "SID00009",
+			"routerLink": ["/pages/tzb/uisftech-view/workdesk"]
+		},
+		{
+			"label": "客户管理",
+			"permission": "SID00009",
+			"items": [{
+
+					"label": "客户联系",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-contact"],
+					"permission": "SID00010"
+				},
+				{
+
+					"label": "潜在客户管理",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-potential"],
+					"permission": "SID00010"
+
+				},
+				{
+					"label": "自选客户群组",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/group"],
+					"permission": "SID00010"
+				},
+				{
+					"label": "客户申领",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-apply/custom-manager"],
+
+					"permission": "SID00010"
+				},
+
+				{
+					"label": "客户转让",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-transfer/account-manager"],
+					"permission": "SID00010"
+				},
+				{
+					"label": "客户分配",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-allot"],
+					"permission": "SID00010"
+				},
+
+				{
+					"label": "客户代管",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-escrow/escrow-account-manager"],
+					"permission": "SID00010"
+				},
+				{
+					"label": "客户开立",
+					"routerLink": ["/pages/tzb/custom/custom-marketing/cus-open/corporate-customer"],
+					"permission": "SID00010"
+				},
+				{
+					"label": "基础管理",
+					"permission": "SID00010",
+					"items": [{
+							"label": "节假日管理",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/basics-management/holiday"]
+						},
+						{
+							"label": "功能排序查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/basics-management/function-sorting"]
+						},
+						{
+							"label": "短信模板查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/basics-management/sms-template"]
+
+						},
+						{
+							"label": "管理工具 ",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/basics-management/managent-tool"]
+						},
+						{
+							"label": "功能搜索 ",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/basics-management/function-search"]
+						}
+					]
+				},
+				{
+					"label": "工作任务",
+					"permission": "SID00010",
+					"items": [{
+						"label": "信贷综合岗界面",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/custom/work-rask/credit-intergration"]
+					}, {
+						"label": "信贷业务申请登记",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/custom/work-rask/credit-apply"]
+					}, {
+						"label": "员工关系管理界面",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/custom/work-rask/staff-relation"]
+
+					}]
+				}
+
+			]
+		},
+		{
+			"label": "系统功能优化",
+			"permission": "SID00009",
+			"items": [{
+				"label": "管理员界面",
+				"permission": "SID00009",
+				"routerLink": ["/pages/tzb/other/system-function/manager"]
+			}, {
+				"label": "用户查看优化建议历史列表",
+				"permission": "SID00009",
+				"routerLink": ["/pages/tzb/other/system-function/user"]
+			}, {
+				"label": "评论页",
+				"permission": "SID00009",
+				"routerLink": ["/pages/tzb/other/system-function/comment"]
+			}]
+		},
+		{
+			"label": "营销",
+			"permission": "SID00009",
+			"items": [{
+					"label": "创建营销活动",
+					"routerLink": ["/pages/tzb/custom/marketing/creat-marketing"]
+				},
+				{
+					"label": "筛选客户模板管理",
+					"routerLink": ["/pages/tzb/custom/marketing/filter-custom"]
+				},
+				{
+					"label": "目标客户探索",
+					"routerLink": ["/pages/tzb/custom/marketing/new-object"]
+				}, {
+					"label": "营销活动管理",
+					"routerLink": ["/pages/tzb/custom/marketing/marketing-manage"]
+				}, {
+					"label": "转推介",
+					"permission": "SID00010",
+					"items": [{
+							"label": "转推介查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/marketing/referral"]
+						},
+						{
+							"label": "营销转推介处理",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/marketing/referral-deal-with"]
+						},
+						{
+							"label": "过度营销控制",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/custom/marketing/over-marketing"]
+						}
+					]
+				}, {
+					"label": "客户活动进展查询",
+					"routerLink": ["/pages/tzb/custom/marketing/custom-progress"]
+				}, {
+					"label": "机构活动进展查询",
+					"routerLink": ["/pages/tzb/custom/marketing/org-progress"]
+				}, {
+					"label": "客户经理活动进展查询",
+					"routerLink": ["/pages/tzb/custom/marketing/custom-manager-progress"]
+				}, {
+					"label": "模型超市",
+					"routerLink": ["/pages/tzb/custom/marketing/model-store"]
+				},
+				{
+					"label": "我的营销",
+					"routerLink": ["/pages/tzb/custom/marketing/my-marketing"]
+				}
+			]
+		},
+		{
+			"label": "产品中心",
+			"permission": "SID00009",
+			"items": [{
+					"label": "产品树展示",
+					"routerLink": ["/pages/tzb/custom/custom-pro"]
+				},
+				{
+					"label": "产品介绍",
+					"routerLink": ["/pages/tzb/custom/custom-pro/proDetail"]
+				},
+				{
+					"label": "可售产品详情",
+					"permission": "SID00009",
+					"items": [{
+							"label": "产品概览",
+							"routerLink": ["/pages/tzb/custom/custom-pro/over-view"]
+						},
+						{
+							"label": "产品说明书",
+							"routerLink": ["/pages/tzb/custom/custom-pro/instruction-book"]
+						},
+						{
+							"label": "业务办理规定",
+							"routerLink": ["/pages/tzb/custom/custom-pro/stipulate"]
+						},
+						{
+							"label": "营销话术",
+							"routerLink": ["/pages/tzb/custom/custom-pro/marketing"]
+						},
+						{
+							"label": "促销活动",
+							"routerLink": ["/pages/tzb/custom/custom-pro/promotion"],
+							"items": [{
+									"label": "促销活动详情",
+									"routerLink": ["/pages/tzb/custom/custom-pro/promotion-detail"]
+								},
+								{
+									"label": "促销活动新增",
+									"routerLink": ["/pages/tzb/custom/custom-pro/promotion-add"]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "工作报表",
+			"permission": "SID00009",
+			"items": [{
+					"label": "工作任务处理报表(机构)",
+					"routerLink": ["/pages/tzb/custom/work-report/report-organization"]
+				},
+				{
+					"label": "工作任务处理报表(员工)",
+					"routerLink": ["/pages/tzb/custom/work-report/report-staff"]
+				},
+				{
+					"label": "客户联系报表(机构)",
+					"routerLink": ["/pages/tzb/custom/work-report/contact-sheet-organization"]
+				},
+				{
+					"label": "客户联系报表(员工)",
+					"routerLink": ["/pages/tzb/custom/work-report/contact-sheet-staff"]
+				}
+			]
+		},
+		{
+			"label": "产品平台2.0",
+			"permission": "SID00009",
+			"items": [{
+				"label": "产品配置",
+				"items": [{
+					"label": "产品目录",
+					"permission": "SID00009",
+					"items": [{
+						"label": "全局目录",
+						"routerLink": ["/pages/tzb/product-platform/product-catalog/global-directory"]
+					}, {
+						"label": "产品线维护",
+						"routerLink": ["/pages/tzb/product-platform/product-catalog/product-line"]
+					}, {
+						"label": "产品组维护",
+						"routerLink": ["/pages/tzb/product-platform/product-catalog/product-group"]
+					}, {
+						"label": "业务目录配置",
+						"routerLink": ["/pages/tzb/product-platform/product-catalog/business-directory"]
+					}]
+				}, {
+					"label": "基础产品",
+					"permission": "SID00009",
+					"items": [{
+						"label": "基础产品管理",
+						"routerLink": ["/pages/tzb/product-platform/basic-product/basic-product-view"]
+					}]
+				}, {
+					"label": "可售产品",
+					"permission": "SID00009",
+					"items": [{
+						"label": "可售产品管理",
+						"routerLink": ["/pages/tzb/product-platform/sale-product/sale-product-view"]
+					}]
+				}, {
+					"label": "产品组件",
+					"permission": "SID00009",
+					"items": [{
+						"label": "组件配置",
+						"routerLink": ["/pages/tzb/product-platform/component-manage/component-view"]
+					}]
+				}, {
+					"label": "产品套餐",
+					"permission": "SID00009",
+					"items": [{
+						"label": "套餐管理",
+						"routerLink": ["/pages/tzb/product-platform/product-package/package-admin"]
+					}]
+				}, {
+					"label": "产品组合",
+					"permission": "SID00009",
+					"items": [{
+						"label": "产品组合模板",
+						"permission": "SID00009",
+						"items": [{
+							"label": "模板配置",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/product-platform/product-mix/product-mix-template"]
+						}, {
+							"label": "模板维护",
+							"permission": "SID00009"
+						}, {
+							"label": "模板标签",
+							"permission": "SID00009"
+						}]
+					}, {
+						"label": "组合产品",
+						"permission": "SID00009",
+						"items": [{
+							"label": "产品配置",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/product-platform/product-mix/composite-product"]
+						}, {
+							"label": "产品维护",
+							"permission": "SID00009"
+						}, {
+							"label": "模板标签",
+							"permission": "SID00009"
+						}]
+					}]
+				}, {
+					"label": "产品功能",
+					"permission": "SID00009",
+					"items": [{
+						"label": "功能配置",
+						"routerLink": ["/pages/tzb/product-platform/function-manage/function-config"]
+					}, {
+						"label": "交付配置",
+						"routerLink": ["/pages/tzb/product-platform/function-manage/delivery-config"]
+					}]
+				}, {
+					"label": "产品关系",
+					"permission": "SID00009",
+					"items": [{
+						"label": "产品关系管理",
+						"routerLink": ["/pages/tzb/product-platform/product-relationship/product-relationship-config"]
+					}]
+				}]
+			}, {
+				"label": "产品面市",
+				"items": [{
+					"label": "渠道站点",
+					"permission": "SID00009",
+					"items": [{
+						"label": "站点配置",
+						"routerLink": ["/pages/tzb/product-platform/product-interview/site-config"]
+					}]
+				}, {
+					"label": "营业店面",
+					"permission": "SID00009",
+					"items": [{
+						"label": "店铺配置",
+						"routerLink": ["/pages/tzb/product-platform/product-interview/business-store"]
+					}]
+				}, {
+					"label": "市场投放",
+					"permission": "SID00009",
+					"items": [{
+						"label": "渠道投放",
+						"routerLink": ["/pages/tzb/product-platform/product-interview/market-launch/channel-delivery"]
+					}, {
+						"label": "投放查询",
+						"routerLink": ["/pages/tzb/product-platform/product-interview/market-launch/delivery-query"]
+					}]
+				}]
+			}]
+		},
+		{
+			"label": "产品平台",
+			"permission": "SID00009",
+			"items": [{
+				"label": "产品层次管理",
+				"permission": "SID00009",
+				"items": [{
+						"label": "产品线管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/product/platform-index/product-line"]
+					}, {
+						"label": "产品组管理",
+						"routerLink": ["/pages/tzb/product/platform-index/product-group"]
+					},
+					{
+						"label": "自定义目录管理",
+						"routerLink": ["/pages/tzb/product/platform-index/custom-directory"]
+					},
+					{
+						"label": "自定义分类管理",
+						"routerLink": ["/pages/tzb/product/platform-index/custom-classify"]
+					},
+					{
+						"label": "产品目录管理",
+						"routerLink": ["/pages/tzb/product/platform-index/product-catalog"]
+					}
+				]
+			}, {
+				"label": "产品结构管理",
+				"permission": "SID00009",
+				"items": [{
+					"label": "产品模板管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/template-manage"]
+				}, {
+					"label": "可运营产品模板管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/operational-template"]
+				}, {
+					"label": "产品部件管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/product-component"]
+				}]
+			}, {
+				"label": "产品配置管理",
+				"permission": "SID00009",
+				"items": [{
+					"label": "可售产品配置管理",
+					"routerLink": ["/pages/tzb/product/platform-index/salable-config"]
+				}, {
+					"label": "基础产品配置管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/basic-product-config"]
+				}, {
+					"label": "可售产品间关系管理",
+					"routerLink": ["/pages/tzb/product/platform-index/salable-relation"]
+				}, {
+					"label": "产品套餐配置",
+					"routerLink": ["/pages/tzb/product/platform-index/package-config"]
+				}]
+			}, {
+				"label": "产品支撑管理",
+				"permission": "SID00009",
+				"items": [{
+					"label": "产品属性基础配置管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/attribute-config"]
+				}, {
+					"label": "产品属性范围管理",
+					"routerLink": ["/pages/tzb/product/platform-index/attribute-range"]
+				}, {
+					"label": "属性处理规则管理",
+					"routerLink": ["/pages/tzb/product/platform-index/attribute-rules"]
+				}, {
+					"label": "产品模板管理",
+					"routerLink": ["/pages/tzb/product/platform-index/template-manage"]
+				}, {
+					"label": "产品功能服务管理",
+					"routerLink": ["/pages/tzb/product/platform-index/function-service"]
+				}, {
+					"label": "产品指标配置管理",
+					"routerLink": ["/pages/tzb/product/platform-index/index-allocation"]
+				}]
+			}, {
+				"label": "产品运营管理",
+				"permission": "SID00009",
+				"items": [{
+					"label": "货架管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/goods-frame"]
+				}, {
+					"label": "可售产品发布",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/salable-release"]
+				}, {
+					"label": "产品分析展示",
+					"routerLink": ["/pages/tzb/product/platform-index/analysis-show"]
+				}]
+			}, {
+				"label": "版本展示",
+				"permission": "SID00009",
+				"items": [{
+					"label": "产品目录版本查询",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/version-catalog"]
+				}, {
+					"label": "产品版本查询",
+					"routerLink": ["/pages/tzb/product/platform-index/version-query"]
+				}]
+			}, {
+				"label": "公共功能：",
+				"permission": "SID00009",
+				"items": [{
+					"label": "高级查询",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/advanced-query"]
+				}, {
+					"label": "流程配置管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/process-config"]
+				}, {
+					"label": "事项管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/event-manage"]
+				}, {
+					"label": "编号管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/product/platform-index/number-manage"]
+				}]
+			}, {
+				"label": "企业级目录查询",
+				"permission": "SID00009",
+				"items": [{
+					"label": "企业级目录查询",
+					"routerLink": ["/pages/tzb/product/platform-index/company-catalog"]
+				}]
+			}]
+		},
+		{
+			"label": "计价",
+			"permission": "SID00009",
+			"items": [{
+					"label": "利率维度维护",
+					"routerLink": ["/pages/tzb/valuation/interest-rates"]
+				},
+				{
+					"label": "利率维度值维护",
+					"routerLink": ["/pages/tzb/valuation/interest-value"]
+				},
+				{
+					"label": "基础利率种类维护",
+					"routerLink": ["/pages/tzb/valuation/base-variety"]
+				},
+				{
+					"label": "贷款基础利率维护",
+					"routerLink": ["/pages/tzb/valuation/base-interest"]
+				},
+				{
+					"label": "利率计划管理",
+					"routerLink": ["/pages/tzb/valuation/interest-plan"]
+				},
+				{
+					"label": "差异化规则管理",
+					"routerLink": ["/pages/tzb/valuation/differerentiation"]
+				},
+				{
+					"label": "周期重定价规则管理",
+					"routerLink": ["/pages/tzb/valuation/cycle"]
+				},
+				{
+					"label": "利率可协商项管理",
+					"routerLink": ["/pages/tzb/valuation/interest-negotiable"]
+				},
+				{
+					"label": "产品执行利率关系管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/valuation/product"]
+				},
+				{
+					"label": "利率计算查询",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/valuation/carry-out"]
+				}
+			]
+		},
+		{
+			"label": "公共管理",
+			"permission": "SID00009",
+			"items": [{
+					"label": "机构管理",
+					"items": [{
+							"label": "机构查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/party-manage"]
+						},
+						{
+							"label": "机构树查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/administer-tree"]
+						},
+						{
+							"label": "机构岗位角色管理",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/party-role"]
+						}, {
+							"label": "机构岗位人员管理",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/party-relation"]
+						}, {
+							"label": "管辖机构",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/administer-manage"]
+						}
+					]
+
+				}, {
+					"label": "角色管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/back-manage/base-manage/role-manage"]
+				}, {
+					"label": "用户管理",
+					"items": [{
+							"label": "用户查询",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/user-manage"]
+						},
+						{
+							"label": "当日操作日志",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/operate-log"]
+						},
+						{
+							"label": "用户密码修改",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/change-password"]
+						},
+						{
+							"label": "解锁用户密码",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/back-manage/base-manage/release-password"]
+						}
+					]
+
+				}, {
+					"label": "权限管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/back-manage/base-manage/power-manage"]
+
+				}, {
+					"label": "岗位管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/back-manage/base-manage/posts-manage"]
+				}, {
+					"label": "营销团队管理",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/back-manage/base-manage/team-manage"]
+				},
+				{
+					"label": "公共参数",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/order/order-center/common-params"]
+				}
+			]
+		},
+		{
+			"label": "系统监控",
+			"permission": "SID00009",
+			"items": [{
+					"label": "在线用户监控",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/other/system-monitoring/online-monitoring"]
+				},
+				{
+					"label": "日志审计",
+					"permission": "SID00009",
+					"routerLink": ["/pages/tzb/other/system-monitoring/log-audit"]
+				}
+			]
+		}, {
+			"label": "交易",
+			"permission": "SID00009",
+			"items": [{
+				"label": "订单中心",
+				"permission": "SID00009",
+				"items": [{
+						"label": "支付管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/order-center/pay-manage"]
+					},
+					{
+						"label": "订单管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/order-center/order-manage"]
+					},
+
+					{
+						"label": "对账管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/order-center/reconciliation-manage"]
+					}
+				]
+			}, {
+				"label": "交易中心",
+				"permission": "SID00009",
+				"items": [{
+					"label": "方案报价",
+					"permission": "SID00009",
+					"items": [{
+						"label": "潜在请求",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/deal-center/scheme-price/potential-request"]
+					}, {
+						"label": "方案维护",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/deal-center/scheme-price/scheme-maintain"]
+					}, {
+						"label": "报价维护",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/order/deal-center/scheme-price/price-maintain"]
+					}]
+
+				}, {
+					"label": "订单执行",
+					"permission": "SID00009",
+					"items": [{
+							"label": "当日销售订单",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/order/deal-center/order-execute/day-sale-order"]
+						}, {
+							"label": "销售订单维护",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/order/deal-center/order-execute/sale-order-maintain"]
+						}, {
+							"label": "销售订单录入",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/order/deal-center/order-execute/sale-order-enter"]
+						},
+						{
+							"label": "销售统计",
+							"permission": "SID00009",
+							"routerLink": ["/pages/tzb/order/deal-center/order-execute/sale-statistic"]
+						}
+					]
+				}]
+			}]
+		}, {
+			"label": "列子",
+			"items": [{
+				"label": "表单验证",
+				"routerLink": ["/pages/demo/validation"]
+			}]
+		},
+		{
+			"label": "工作流",
+			"permission": "SID00009",
+			"items": [{
+				"label": "流程定义管理",
+				"permission": "SID00009",
+				"items": [{
+						"label": "流程管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-design/flow-catalog"]
+					},
+					{
+						"label": "流程变量管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-design/flow-variate"]
+					}
+				]
+			}, {
+				"label": "流程实例管理",
+				"permission": "SID00009",
+				"items": [{
+						"label": "流程实例管理",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-runtime/flow-demo"]
+					},
+					{
+						"label": "历史流程查询",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-runtime/history-flow"]
+					},
+					{
+						"label": "已办任务查询",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-runtime/already-work"]
+					},
+					{
+						"label": "待办任务查询",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-runtime/wait-task"]
+					},
+					{
+						"label": "待检出任务查询",
+						"permission": "SID00009",
+						"routerLink": ["/pages/tzb/other/workflow/workflow-runtime/will-detection"]
+					}
+				]
+			}]
+		},
+		{
+			"label": "工作流2",
+			"items": [{
+					"label": "客户",
+					"routerLink": ["/pages/tzb/workflow/custom-workflow/"]
+				},
+				{
+					"label": "产品",
+					"routerLink": ["/pages/tzb/workflow/product-workflow/"]
+				},
+				{
+					"label": "计价",
+					"routerLink": ["/pages/tzb/workflow/valuation-workflow/"]
+				},
+				{
+					"label": "公共",
+					"routerLink": ["/pages/tzb/workflow/common-workflow/"]
+				}
+			]
+		},
+		{
+			"label": "其他",
+			"items": [{
+					"label": "工作类型维护",
+					"routerLink": ["/pages/tzb/custom/otherThing/workType"]
+				},
+				{
+					"label": "工作任务维护",
+					"routerLink": ["/pages/tzb/custom/otherThing/workTask"]
+				}
+			]
+		},
+		{
+			"label": "下载中心",
+			"routerLink": ["/pages/tzb/custom/downloadCenter/downCenter"]
+		}
+	]
+}

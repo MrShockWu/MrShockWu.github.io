@@ -1,0 +1,71 @@
+body{
+    color: #333;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,Arial, sans-serif,'Apple Color Emoji';
+}
+
+.InputTxt,.InputSearch,.TxtArea{
+    width: 100%;
+    min-width: 120px;
+    color: #333;
+    border: 1px solid #a6a6a6;
+    outline-color: #34cfe6;
+    border-radius: 3px 3px 3px 3px;
+    padding: 4px 5px;
+}
+.InputTxt::-webkit-input-placeholder ,.InputSearch::-webkit-input-placeholder{
+    color: #a6a6a6;
+    text-align: left;
+}
+input:disabled{
+    background-color: #f8f8f8;
+}
+.InputSearch{
+    display: inline-block;
+    position: absolute;
+    border-right:none;
+}
+.SearchImg{
+    display:inline-block;
+    border: 1px solid #a6a6a6;
+    position: absolute;
+    background: url('../layout/images/searchMore.png') no-repeat 50% 50%; 
+    padding: 4px 5px;
+    top: 0px;
+    border-radius: 0px 3px 3px 0px; 
+}
+@media(max-width: 768px){
+    .InputTxt,.InputSearch{
+       height: 24px;
+       line-height: 24px;
+    }
+    .SearchImg{
+        width: 24px;
+        height: 24px;
+        right: -46px;
+    }
+}
+@media(min-width: 768px){
+    .InputTxt,.InputSearch{
+       height: 28px;
+       line-height: 28px;
+    }
+    .SearchImg{
+        width: 28px;
+        height: 28px;
+        right: -49px;
+    }
+}
+@media(min-width: 1200px){
+    .InputTxt,.InputSearch{
+       height: 32px;
+       line-height: 32px;
+    }
+    .SearchImg{
+        width: 32px;
+        height: 32px;
+        right: -53px;
+    }
+    
+}

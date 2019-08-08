@@ -1,0 +1,28 @@
+body {
+    .uButton {
+        display: inline-block;
+        width: 71px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        white-space: nowrap;
+        color: #fff;
+        border-radius: 50px !important;
+        background-color: #34cfe6 !important;
+        background: #34cfe6 !important;
+        border: 1px solid #e8e8e8;
+        font-size: 14px;
+    }
+    .uButton:hover {
+        background: #39e1fa !important;
+    }
+    .addButton {
+        background-color: #f8a900 !important;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+    .addButton:hover {
+        background: #fcbb2f !important;
+    }
+}

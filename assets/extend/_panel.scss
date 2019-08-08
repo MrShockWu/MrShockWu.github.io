@@ -1,0 +1,109 @@
+body {
+    .ui-tabview-new, .ui-tabview-new.ui-tabview-top {
+        font-family: $fontFamily;
+        >.ui-tabview-nav {
+            background-color: #fff;
+            height: 65px;
+            padding: 13px;
+            > li {
+                height: 40px;
+                border: solid 2px #ecebeb;
+
+                .ui-tabview-title {
+                    line-height: 1.5em;
+                    vertical-align: middle;
+                }
+
+                &.ui-state-active {
+                    
+                    a {
+                        color: #34cfe6;
+                    }
+                }
+            }
+        }
+
+        // .ui-tabview-panels {
+        //     background-color: #fff;
+        // }
+    }
+
+    .ui-panel-new, .ui-panel-new-hover {
+        font-family: $fontFamily;
+        .ui-panel-titlebar {
+            background-color: #fff;
+            color: #004257;
+            font-weight: bold;
+            border-bottom: 2px solid #efefef;
+            line-height: 45px;
+        }
+
+        .ui-panel-content {
+            border: none;
+            background-color: #fff;
+        }
+    }
+
+    .ui-panel-new-hover {
+        font-family: $fontFamily;
+        border: 2px solid #fff;
+
+        &:hover {
+            border-style: dashed;
+            border-color: #34cfe6;
+        }
+    }
+
+    ul.ui-breadcrumb-new {
+        font-family: $fontFamily;
+        background: transparent;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 3px 0;
+        padding-left: 9px;
+        font-size: 16px;
+        li {
+            display: inline-block;
+
+            a {
+                margin-left: 10px;
+                color: #004257;
+            }
+
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: #34cfe6;
+                }
+            }
+
+            &.active {
+                a {
+                    color: #34cfe6;
+                }
+            }
+            
+            &:first-child {
+                &:before{
+                    content: '';
+                }
+            }
+
+            &:before{
+                content: '/';
+                position: absolute;
+                top: -1px;
+                color: #cccccc;
+            }
+        }
+    }
+
+    .grid-row-padding-lr {
+        padding: 0 .5em;
+    }
+
+    .grid-row-padding-tb {
+        padding: .25em 0;
+    }
+}
