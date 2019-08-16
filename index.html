@@ -66,11 +66,13 @@
     margin-top: 0px;
     border: 1px solid gold;
   }
+
   .gameNamediv {
     margin-left: 50px;
     /* margin-top: 0px; */
     border: 1px solid gold;
   }
+
   label {
     font-size: 18px;
     font-weight: bold;
@@ -234,21 +236,25 @@
 
   #apDiv1 {
     position: absolute;
-    width: 300px;
-    height: 400px;
+    /* width: 100%;
+    height: 100%; */
     z-index: 100;
     left: 40px;
     top: 60px;
+    /* background: #ccc;
+    background-color: rgba(20, 18, 18, 0.658); */
   }
 
   .backstyle {
+    z-index: 22;
     background: #ccc;
     background-color: rgba(20, 18, 18, 0.658);
   }
-  /* .inputback{
+
+  .inputback{
     background: #ccc;
-    background-color: rgba(20, 18, 18, 0.658);
-  } */
+    background-color: rgba(20, 18, 18, 0.1) !important;
+  }
 </style>
 
 <body>
@@ -332,24 +338,14 @@
   </div>`
 
 
-  // function readyNumber() {
-
-  //   $('textarea').each(function () {
-  //     this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-  //   }).on('input', function () {
-  //     this.style.height = 'auto';
-  //     this.style.height = (this.scrollHeight) + 'px';
-  //   })
-  // }
-  // function aa () {
-  //   alert('aaaaaaaaaa')
-  // }
   //弹出方法
   function alertred() {
-    alert('红包打开了')
     console.log('aa')
     $('#apDiv1').append(alertcontent)//在main内部结尾处添加模态框，利用上述css代码改变位置
     $('body').addClass('backstyle')
+    $('#apDiv1').addClass('backstyle')
+    $('input').addClass('inputback')
+    $('textarea').addClass('inputback')
     $('.img-circle').hide(500)
   }
   //关闭弹出层
@@ -357,28 +353,40 @@
     $('.hongbao-container').remove()
     // $('input textarea').removeClass('inputback')
     $('body').removeClass('backstyle')
+    $('#apDiv1').removeClass('backstyle')
+    $('input').removeClass('inputback')
+    $('textarea').removeClass('inputback')
     $('.img-circle').show(500)
   }
   //打开红包
-  function openHongbao () {
-    var scoredata  = Math.round(Math.random()*1000 )
-    if (scoredata>0) {
+  function openHongbao() {
+    var scoredata = Math.round(Math.random() * 1000)
+    if (scoredata > 0) {
       $('.img-circle').remove()
       $('#gameName').addClass('gameNamediv')
-      $('#gameName').text('您开出的'+scoredata+'积分，已经录入系统')
+      $('#gameName').text('您开出的' + scoredata + '积分，已经录入系统')
     }
-    $('.hongbao-message').text(scoredata+'积分')
-    $('.hongbao-descName').text('您开出的'+scoredata+'积分，已经录入系统')
+    $('.hongbao-message').text(scoredata + '积分')
+    $('.hongbao-descName').text('您开出的' + scoredata + '积分，已经录入系统')
     $('.open-hongbao').hide(500)
-    console.log('dianjiledakai',scoredata)
+
   }
   // readyNumber()
   //获取url参数
-  var url = window.location.href;//当前请求的url
-  console.log(url,'urlrlrl')
+  // var url = window.location.href;//当前请求的url
+  function getQueryString(name) {
+    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+      return unescape(r[2]);
+    }
+    return null;
+  }
+
   // var textall = document.getElementsByTagName('html')[0].innerHTML;
   var textall = document.getElementsByTagName('html')[0];
-  console.log(textall,'teaxtall')
+  // console.log(url, 'urlrlrl')
+  console.log(textall, 'teaxtall')
   $('h2').text('营销活动名称')
   $("#createUserId").val("0500");
   $("#createUserName").val("客户经理")
@@ -419,9 +427,11 @@
   var TZB_HTTP_CUS = 'http://172.16.101.133/ywsn/'
   var API = {
     queryMarketingCampaignById: 'queryMarketingCampaignById',
-    queryTemplateContent: 'queryTemplateContent'
+    queryTemplateContent: 'queryTemplateContent',
+    createActivityResult: 'createActivityResult',
+    createEquity: 'createEquity',
   }
-   window.onload = function () {
+  window.onload = function () {
     $.ajax({
       url: TZB_HTTP_CUS + API.queryMarketingCampaignById,
       type: 'POST',
@@ -457,5 +467,127 @@
     })
   }
 
+  //红包点开之后调取权益登记服务
+  function rightsTotal() {
+    let params = {
+      equityId: getQueryString('equityId'),
+      equityValue: scoredata,
+      activityId: getQueryString('activityId'),
+      templateId: getQueryString('templateId'),
+      custNo: getQueryString('custNo'),
+      status: '',
+      commonHeader: {
+        timeStamp: "1565403581420",
+        jumpPath: "custom/marketing/marketing-project/query-plan",
+        extParam: {
+          permissionMode: "BELONG_MODE",
+          orgId: "ha02",
+          managePermission: "Y",
+          postId: "ADMIN",
+          subBranchType: "",
+          operatingLevel: "SUB_BRANCH_DT"
+        },
+        departmentId: "",
+        tranDate: "20190810",
+        tranTime: "101941420",
+        lastTimeZone: "20190810101838843",
+        userId: "0500",
+        orgId: "0117",
+        userRoles: " 1007,ADMIN,LHJJ,bushirenyuan002,bushirenyuan,WDKQ,TSJS,zhihanghangzhang,yewutuozhanbuzhuguan,FKJS,kehujingli",
+        targetId: "101010"
+      }
+    }
+    $.ajax({
+      url: TZB_HTTP_CUS + API.createEquity,
+      type: 'POST',
+      data: JSON.stringify(str),
+      async: false,
+      headers: {
+        'x-ajax': '1',
+        'Content-Type': 'application/json'
+      },
+      dataType: 'json',
+      success: (data) => {
+        if (data.returnCode.code == 'success') {
+
+        } else {
+          this.msgs = [];
+          this.msgs.push({ severity: 'error', summary: '提示', detail: data.returnCode.message });
+        }
+      },
+      error: (erro) => {
+        this.msgs = [];
+        this.msgs.push({ severity: 'error', summary: '提示', detail: "调用服务失败！" });
+      }
+    })
+  }
+  //点击链接进入h5页面之后调取结果统计服务
+  function resultTotal() {
+    var timeall = new Date()
+    var year = timeall.getFullYear()
+    var month = timeall.getMonth()+1
+    var day = timeall.getDate();
+    var hour = aa.getHours();
+    var minutes = aa.getMinutes();
+    var second = aa.getSeconds();
+
+    var time = year+'-'+month+'-'+day+':'+hour+'-'+minutes+'-'+second
+
+    let params = {
+      activityId: getQueryString('activityId'),
+      templateId: getQueryString('templateId'),
+      custNo: getQueryString('custNo'),
+      custName: getQueryString('custName'),
+      phoneId: getQueryString('phoneId'),
+      time: time,
+      location: '南京',
+      // marketingCampaignId: 'MCE23010017',
+      commonHeader: {
+        timeStamp: "1565403581420",
+        jumpPath: "custom/marketing/marketing-project/query-plan",
+        extParam: {
+          permissionMode: "BELONG_MODE",
+          orgId: "ha02",
+          managePermission: "Y",
+          postId: "ADMIN",
+          subBranchType: "",
+          operatingLevel: "SUB_BRANCH_DT"
+        },
+        departmentId: "",
+        tranDate: "20190810",
+        tranTime: "101941420",
+        lastTimeZone: "20190810101838843",
+        userId: "0500",
+        orgId: "0117",
+        userRoles: " 1007,ADMIN,LHJJ,bushirenyuan002,bushirenyuan,WDKQ,TSJS,zhihanghangzhang,yewutuozhanbuzhuguan,FKJS,kehujingli",
+        targetId: "101010"
+      }
+    }
+    $.ajax({
+      url: TZB_HTTP_CUS + API.createActivityResult,
+      type: 'POST',
+      data: JSON.stringify(str),
+      async: false,
+      headers: {
+        'x-ajax': '1',
+        'Content-Type': 'application/json'
+      },
+      dataType: 'json',
+      success: (data) => {
+        if (data.returnCode.code == 'success') {
+
+        } else {
+          this.msgs = [];
+          this.msgs.push({ severity: 'error', summary: '提示', detail: data.returnCode.message });
+        }
+      },
+      error: (erro) => {
+        this.msgs = [];
+        this.msgs.push({ severity: 'error', summary: '提示', detail: "调用服务失败！" });
+      }
+    })
+  }
   console.log($, '$')
 </script>
+
+</html>
