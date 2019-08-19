@@ -18,10 +18,12 @@
 </head>
 
 <style>
-  body {
+   body {
     /* background: #ccc; */
-    background-image: url('./bg.png');
-    background-repeat: no-repeat;
+    background-image: url('./bgimg.png');
+    /* background-repeat: no-repeat; */
+    background-size: 50px*20px;
+    
   }
 
   h2 {
@@ -50,6 +52,7 @@
     display: inline-block;
     width: 100%;
     line-height: 30px;
+    border-bottom: 0.5px solid #ccc;
   }
 
   span label {
@@ -76,8 +79,9 @@
   }
 
   label {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    color:rgb(65, 64, 64);
   }
 
   .specialDiv span {
@@ -123,7 +127,7 @@
 
   .hongbao {
     text-align: center;
-    height: 480px;
+    height: 400px;
     background: #f05a49;
     width: 300px;
     left: 0;
@@ -257,65 +261,84 @@
     background: #ccc;
     background-color: rgba(20, 18, 18, 0.1) !important;
   }
+  .imgstyle {
+    width: 100%;
+  }
+  .divclassshow {
+    display: inline-block;
+    width:45%;
+    height:30px;
+    text-align: right;
+    
+  }
+  .desdiv{
+    width:98%;
+    margin:0 auto;
+    text-indent: 2em;
+    text-align: left;
+  }
 </style>
 
 <body>
-  <div id="apDiv1" style="text-align: center"></div>
-  <div class="firstdiv">
-    <h2></h2>
-    <div class="samadiv">
-      <span>
-        <label for="">创建人编号：</label>
-        <input id="createUserId" name="createUserId" type="text" />
-      </span>
-      <span>
-        <label for="">创建人名称：</label>
-        <input id="createUserName" name="createUserName" type="text" />
-      </span>
+    <div id="apDiv1" style="text-align: center"></div>
+    <div class="imgclass">
+      <img class="imgstyle" src="./banner.png" alt="">
     </div>
-    <div>
-      <span>
-        <label for="">活动开始时间：</label>
-        <input id="fromDate" name="fromDate" type="text" />
-      </span>
-      <span>
-        <label for="">活动结束时间：</label>
-        <input id="thruDate" name="thruDate" type="text" />
-      </span>
+    <div class="firstdiv">
+      <!-- <h2></h2> -->
+      <div class="samadiv">
+        <span>
+          <label for="">创建人编号：</label>
+          <div class="divclassshow" id="createUserId" name="createUserId"></div>
+          <!-- <input type="text" /> -->
+        </span>
+        <span>
+          <label for="">创建人名称：</label>
+          <div class="divclassshow" id="createUserName" name="createUserName" ></div>
+        </span>
+      </div>
+      <div>
+        <span>
+          <label for="">活动开始时间：</label>
+          <div class="divclassshow" id="fromDate" name="fromDate" type="text"></div>
+        </span>
+        <span>
+          <label for="">活动结束时间：</label>
+          <div class="divclassshow" id="thruDate" name="thruDate" type="text"></div>
+        </span>
+      </div>
+      <div>
+        <span>
+          <label for="">产品名称：</label>
+          <div class="divclassshow" id="prodcutName" name="productName" type="text"></div>
+        </span>
+        <span>
+          <label for="">产品编号：</label>
+          <div class="divclassshow" id="prodcutId" name="productId" type="text"></div>
+        </span>
+      </div>
+      <div >
+        <span>
+          <label for="">营销活动描述：</label>
+          <div class="divclassshow desdiv" id="marketingActivityDes" name="marketingActivityDes" > </div>
+        </span>
+      </div>
+      <div>
+        <span>
+          <label for="">营销游戏：</label>
+          <div class="divclassshow" id="gameName" name="gameName" type="text"></div>
+          <!-- <img src='../../../../../../../assets/layout/images/njpoc/njbank.png' alt=''> -->
+        </span>
+      </div>
+      <!-- <div id="gameName">
+  
+      </div> -->
+      <div style="text-align:center; margin-top:30px;" onclick="alertred()" class="img-circle">
+        <img style="height: 50%;width:50%;" src="./khb.jpg">
+      </div>
+      <main></main>
     </div>
-    <div>
-      <span>
-        <label for="">产品名称：</label>
-        <input id="prodcutName" name="productName" type="text" />
-      </span>
-      <span>
-        <label for="">产品编号：</label>
-        <input id="prodcutId" name="productId" type="text" />
-      </span>
-    </div>
-    <div class="specialDiv">
-      <span>
-        <label for="">营销活动描述：</label>
-        <textarea id="marketingActivityDes" name="marketingActivityDes" rows="3" cols="40"> </textarea>
-      </span>
-    </div>
-    <div>
-      <span>
-        <label for="">营销游戏：</label>
-        <input id="gamenameid" name="gameName" type="text" />
-        <!-- <img src='../../../../../../../assets/layout/images/njpoc/njbank.png' alt=''> -->
-      </span>
-    </div>
-    <div id="gameName">
-    
-    </div>
-    <div style="text-align:center; margin-top:30px;" onclick="alertred()" class="img-circle">
-      <img style="height: 50%;width:50%;"
-        src="./khb.jpg">
-    </div>
-    <main></main>
-  </div>
-</body>
+  </body>
 <script>
   var descName = '已存入您的积分账户中,可用于积分兑换';
   var alertcontent = `<div class='hongbao-container'>
@@ -390,14 +413,14 @@
   // console.log(url, 'urlrlrl')
   console.log(textall, 'teaxtall')
   $('h2').text('鑫祥盈理财产品大型推介活动')
-  $("#createUserId").val("0500");
-  $("#createUserName").val("客户经理")
-  $('#fromDate').val('2019-08-13')
-  $('#thruDate').val('2019-08-31')
-  $('#prodcutName').val('鑫祥盈')
-  $('#prodcutId').val('PID00001')
-  $('#marketingActivityDes').val('该营销活动旨在为客户推荐最新的理财产品，该产品具有中等风险，一万元起够，具体请垂询客户经理')
-  $('#gamenameid').val('拆积分')
+  $("#createUserId").text("0500");
+  $("#createUserName").text("客户经理")
+  $('#fromDate').text('2019-08-13')
+  $('#thruDate').text('2019-08-31')
+  $('#prodcutName').text('鑫祥盈')
+  $('#prodcutId').text('PID00001')
+  $('#marketingActivityDes').text('该营销活动旨在为客户推荐最新的理财产品，该产品具有中等风险，一万元起够，具体请垂询客户经理')
+  $('#gamenameid').text('拆积分')
   var str = {
     countNum: 10,
     pageNum: 1,
