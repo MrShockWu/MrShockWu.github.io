@@ -367,20 +367,20 @@
   function alertred() {
     console.log('aa')
     $('#apDiv1').append(alertcontent)//在main内部结尾处添加模态框，利用上述css代码改变位置
-    $('body').addClass('backstyle')
-    $('#apDiv1').addClass('backstyle')
-    $('input').addClass('inputback')
-    $('textarea').addClass('inputback')
+    // $('body').addClass('backstyle')
+    // $('#apDiv1').addClass('backstyle')
+    // $('input').addClass('inputback')
+    // $('textarea').addClass('inputback')
     $('.img-circle').hide(500)
   }
   //关闭弹出层
   function closeClick() {
     $('.hongbao-container').remove()
     // $('input textarea').removeClass('inputback')
-    $('body').removeClass('backstyle')
-    $('#apDiv1').removeClass('backstyle')
-    $('input').removeClass('inputback')
-    $('textarea').removeClass('inputback')
+    // $('body').removeClass('backstyle')
+    // $('#apDiv1').removeClass('backstyle')
+    // $('input').removeClass('inputback')
+    // $('textarea').removeClass('inputback')
     $('.img-circle').show(500)
   }
   //打开红包
@@ -388,7 +388,7 @@
     var scoredata = Math.round(Math.random() * 1000)
     if (scoredata > 0) {
       $('.img-circle').remove()
-      $('#gameName').addClass('gameNamediv')
+      $('#gameName').addClass('desdiv')
       $('#gameName').text('您开出的' + scoredata + '积分，已经录入系统')
     }
     $('.hongbao-message').text(scoredata + '积分')
